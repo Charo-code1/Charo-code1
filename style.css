@@ -302,3 +302,27 @@ header {
   transform: scale(1.2);
   filter: grayscale(0%);
   }
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #007bff;
+  transform: scale(1.1);
+}
+
+.social-icons i {
+  font-size: 20px;
+}
