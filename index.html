@@ -159,18 +159,61 @@ footer {
   <p>Mon objectif est de devenir un agent commercial performant tout en développant mes compétences en informatique et marketing numérique.</p>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Votre nom" required />
-    <input type="email" placeholder="Votre email" required />
-    <textarea rows="4" placeholder="Votre message" required></textarea>
-    <button type="submit">Envoyer</button>
+<section id="contact" class="section">
+  <h2>Contactez-moi</h2>
+  <form action="https://formspree.io/f/mnnvddye" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Envoyer</button>
+    <p class="confirmation-message">✅ Merci ! Votre message a bien été envoyé.</p>
   </form>
 </section>
+    <div class="social-links">
+  <h3>Retrouvez-moi sur :</h3>
+  <a href="https://www.linkedin.com/in/oumar-diawara-a2469036a" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+  </a>
+  <a href="https://wa.me/22394794434" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+  </a>
+  <a href="mailto:chvroog94@gmail.com">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
+  </a>
+    </div>
 
   </div>  <footer>
     © 2025 Oumar Diawara. Tous droits réservés.<br />
     <a href="https://linkedin.com/in/oumar-diawara-a2469036a" style="color: #b2dfdb">LinkedIn</a>
   </footer>
+  <script>
+  const form = document.querySelector("form");
+  const confirmation = document.querySelector(".confirmation-message");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      confirmation.style.display = "block";
+    } else {
+      alert("Une erreur est survenue. Veuillez réessayer.");
+    }
+  });
+      </script>
 </body></html>
