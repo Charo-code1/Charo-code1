@@ -1,83 +1,112 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oumar Diawara - Mini-site Pro</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oumar Diawara - Site Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .photo-profil {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            max-width: 150px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Oumar Diawara</h1>
-    <p>Agent Commercial | Apprenant en Informatique</p>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#objectif">Objectif</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <img src="photo.jpg" alt="Photo de Oumar" class="photo-profil">
+        <h1>Oumar Diawara</h1>
+        <p>Agent commercial & apprenant en informatique</p>
+        <div class="buttons">
+            <a href="#contact" class="btn">Me Contacter</a>
+            <a href="cv-oumar.pdf" class="btn" download>Télécharger mon CV</a>
+            <a href="#projets" class="btn">Voir mes Projets</a>
+        </div>
+    </header><!-- OBJECTIF PROFESSIONNEL -->
+<section class="objectif">
+    <h2>Objectif Professionnel</h2>
+    <p>Mon objectif est de mettre à profit mes compétences commerciales tout en évoluant dans le domaine du numérique.</p>
+</section>
 
-  <main>
-    <section id="accueil">
-      <h2>Bienvenue</h2>
-      <p>Bienvenue sur mon mini-site professionnel. Je suis Oumar Diawara, passionné par le commerce et les nouvelles technologies.</p>
-      <img src="photo.jpg" alt="Photo de Oumar Diawara" class="profil">
-    </section>
+<!-- À PROPOS -->
+<section class="a-propos">
+    <h2>À propos de moi</h2>
+    <p>Je suis un jeune professionnel passionné par la vente, le contact humain, et curieux des nouvelles technologies. J’apprends activement l’informatique pour élargir mes compétences et mieux répondre aux besoins du marché.</p>
+</section>
 
-    <section id="objectif">
-      <h2>Objectif Professionnel</h2>
-      <p>Mon objectif est de mettre mes compétences commerciales au service d’une entreprise dynamique tout en développant mes connaissances en informatique.</p>
-    </section>
+<!-- COMPÉTENCES -->
+<section class="competences">
+    <h2>Compétences</h2>
+    <ul>
+        <li>Communication & Relation client</li>
+        <li>Vente & Prospection</li>
+        <li>Maîtrise de Word et Excel</li>
+        <li>Notions de HTML, CSS, GitHub Pages</li>
+        <li>Utilisation d’outils numériques</li>
+    </ul>
+</section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Prospection et suivi client</li>
-        <li>Vente de produits et négociation</li>
-        <li>Conseils commerciaux personnalisés</li>
-        <li>Assistance numérique de base</li>
-      </ul>
-    </section>
+<!-- SERVICES -->
+<section class="services">
+    <h2>Services</h2>
+    <div class="service-card">
+        <h3>Vente de produits</h3>
+        <p>Je propose mes services pour vendre et présenter des produits efficacement.</p>
+    </div>
+    <div class="service-card">
+        <h3>Suivi client</h3>
+        <p>Je m'assure du bon suivi et de la satisfaction de vos clients.</p>
+    </div>
+    <div class="service-card">
+        <h3>Assistance numérique</h3>
+        <p>Je peux accompagner les débutants dans l’utilisation des outils informatiques de base.</p>
+    </div>
+</section>
 
-    <section id="competences">
-      <h2>Compétences</h2>
-      <ul>
-        <li>Relation client et communication</li>
-        <li>Outils numériques (WhatsApp Business, Excel...)</li>
-        <li>Bureautique et navigation internet</li>
-        <li>Création de mini-sites web (comme celui-ci)</li>
-      </ul>
-    </section>
+<!-- PROJETS -->
+<section class="projets" id="projets">
+    <h2>Mes Projets</h2>
+    <ul>
+        <li>Création de ce site web personnel</li>
+        <li>Participation à une formation en ligne (Informatique de base)</li>
+        <li>Expérience en vente directe de produits locaux</li>
+    </ul>
+</section>
 
-    <section id="projets">
-      <h2>Projets</h2>
-      <ul>
-        <li>Création de ce site web avec GitHub Pages</li>
-        <li>Participation à des ventes commerciales locales</li>
-        <li>Formations autodidactes en ligne (informatique)</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>📞 Téléphone : +223 94 79 44 34<br>
-         📧 Email : chvroog94@gmail.com</p>
-      <form action="https://formspree.io/f/your-id" method="POST">
-        <input type="text" name="nom" placeholder="Votre nom" required>
+<!-- FORMULAIRE DE CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contactez-moi</h2>
+    <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required>
         <input type="email" name="email" placeholder="Votre email" required>
-        <textarea name="message" placeholder="Votre message..." required></textarea>
+        <textarea name="message" placeholder="Votre message" required></textarea>
         <button type="submit">Envoyer</button>
-      </form>
-    </section>
-  </main>
+    </form>
+    <p class="confirmation">Merci pour votre message !</p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Oumar Diawara – Tous droits réservés</p>
-  </footer>
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Oumar Diawara. Tous droits réservés.</p>
+    <div class="socials">
+        <a href="https://linkedin.com/in/oumar-diawara">LinkedIn</a>
+        <a href="https://wa.me/22394794434">WhatsApp</a>
+    </div>
+</footer>
+
+<!-- SCRIPT POUR EFFET SMOOTH SCROLL -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
