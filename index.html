@@ -26,6 +26,7 @@
   <header>
   <nav class="navbar">
     <h1 class="logo">Mon Portfolio</h1>
+    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
     <ul class="nav-links">
       <li><a href="#accueil">Accueil</a></li>
       <li><a href="#objectif">Objectif</a></li>
@@ -34,6 +35,14 @@
     </ul>
   </nav>
   </header>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+  </script>
 <body>
     <!-- HERO SECTION -->
     <header class="hero">
