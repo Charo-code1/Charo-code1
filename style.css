@@ -105,3 +105,44 @@ footer {
     font-size: 1em;
   }
 }
+/* Section Services */
+#services {
+  padding: 40px 20px;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0e76a8;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  flex: 1 1 280px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+}
