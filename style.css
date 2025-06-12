@@ -223,3 +223,32 @@ header {
     padding: 10px 0;
   }
   }
+/* Bloc principal de présentation (avec photo et nom) */
+.hero {
+  background-color: #0e76a8;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+/* Quand on veut qu'il monte un peu */
+.hero:hover {
+  top: -10px;
+}
+
+/* Image de profil centrée avec bordure ronde */
+.hero img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
