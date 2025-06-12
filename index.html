@@ -1,130 +1,56 @@
-<!DOCTYPE html><html lang="fr">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oumar Diawara - Site Professionnel</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .photo-profil {
-            border-radius: 50%;
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oumar Diawara - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <img src="photo.jpg" alt="Photo de Oumar" class="photo-profil">
-        <h1>Oumar Diawara</h1>
-        <p>Agent commercial & apprenant en informatique</p>
-        <div class="buttons">
-            <a href="#contact" class="btn">Me Contacter</a>
-            <a href="cv-oumar.pdf" class="btn" download>Télécharger mon CV</a>
-            <a href="#projets" class="btn">Voir mes Projets</a>
-        </div>
-    </header><!-- OBJECTIF PROFESSIONNEL -->
-<section class="objectif"
-    data-aos="fade-up">
-    <h2>Objectif Professionnel</h2>
-    <p>Mon objectif est de mettre à profit mes compétences commerciales tout en évoluant dans le domaine du numérique.</p>
-</section>
+  <header>
+    <h1 data-aos="fade-down">Bienvenue sur mon site</h1>
+    <p data-aos="fade-up" data-aos-delay="300">Je suis Oumar Diawara, développeur web en formation.</p>
+  </header>
 
-<!-- À PROPOS -->
-<section class="a-propos"
-    data-aos="fade-up">
+  <section id="about" data-aos="fade-right">
     <h2>À propos de moi</h2>
-    <p>Je suis un jeune professionnel passionné par la vente, le contact humain, et curieux des nouvelles technologies. J’apprends activement l’informatique pour élargir mes compétences et mieux répondre aux besoins du marché.</p>
-</section>
+    <p>Passionné par l'informatique, je construis progressivement mes compétences en développement web.</p>
+  </section>
 
-<!-- COMPÉTENCES -->
-<section class="competences"
-    data-aos="fade-up">
-    <h2>Compétences</h2>
-    <ul>
-        <li>Communication & Relation client</li>
-        <li>Vente & Prospection</li>
-        <li>Maîtrise de Word et Excel</li>
-        <li>Notions de HTML, CSS, GitHub Pages</li>
-        <li>Utilisation d’outils numériques</li>
-    </ul>
-</section>
+  <section id="objectif" data-aos="zoom-in">
+    <h2>Objectif Professionnel</h2>
+    <p>Devenir un développeur web reconnu au Mali et à l’international, créer des solutions numériques utiles et accessibles.</p>
+  </section>
 
-<!-- SERVICES -->
-<section class="services"
-    data-aos="fade-up">
-    <h2>Services</h2>
-    <div class="service-card">
-        <h3>Vente de produits</h3>
-        <p>Je propose mes services pour vendre et présenter des produits efficacement.</p>
-    </div>
-    <div class="service-card">
-        <h3>Suivi client</h3>
-        <p>Je m'assure du bon suivi et de la satisfaction de vos clients.</p>
-    </div>
-    <div class="service-card">
-        <h3>Assistance numérique</h3>
-        <p>Je peux accompagner les débutants dans l’utilisation des outils informatiques de base.</p>
-    </div>
-</section>
-
-<!-- PROJETS -->
-<section class="projets" id="projets"
-    data-aos="fade-up">
+  <section id="projects" data-aos="fade-left">
     <h2>Mes Projets</h2>
-    <ul>
-        <li>Création de ce site web personnel</li>
-        <li>Participation à une formation en ligne (Informatique de base)</li>
-        <li>Expérience en vente directe de produits locaux</li>
-    </ul>
-</section>
-
-<!-- FORMULAIRE DE CONTACT -->
-<section class="contact" id="contact"
-    data-aos="fade-up">
-    <h2>Contactez-moi</h2>
-    <form action="https://formspree.io/f/your-id" method="POST">
-        <input type="text" name="name" placeholder="Votre nom" required>
-        <input type="email" name="email" placeholder="Votre email" required>
-        <textarea name="message" placeholder="Votre message" required></textarea>
-        <button type="submit">Envoyer</button>
-    </form>
-    <p class="confirmation">Merci pour votre message !</p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2025 Oumar Diawara. Tous droits réservés.</p>
-    <div class="socials">
-        <a href="https://linkedin.com/in/oumar-diawara">LinkedIn</a>
-        <a href="https://wa.me/22394794434">WhatsApp</a>
+    <div class="project">
+      <h3>Mini-site Portfolio</h3>
+      <p>Un site web personnel pour présenter mon parcours et mes compétences.</p>
     </div>
-</footer>
+  </section>
 
-<!-- SCRIPT POUR EFFET SMOOTH SCROLL -->
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/tonIDici" method="POST">
+      <input type="text" name="name" placeholder="Nom" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
 
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Oumar Diawara. Tous droits réservés.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-        </html>
+</html>
