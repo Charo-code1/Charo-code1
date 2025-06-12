@@ -1,178 +1,176 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
+<!DOCTYPE html><html lang="fr"><head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio de Oumar Diawara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oumar Diawara - Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e1bee7);
       color: #333;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background: #023e8a;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .photo {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    .photo img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid #0077b6;
-    }
-    h2 {
-      color: #0077b6;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .contact-form label {
-      display: block;
-      margin-top: 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .contact-form button {
-      margin-top: 15px;
-      background: #0077b6;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #0077b6;
-      color: white;
-    }
+      scroll-behavior: smooth;
+    }header {
+  background-color: #00695c;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background-color: #ffffffd9;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #00695c;
+  border-bottom: 2px solid #00695c;
+  padding-bottom: 0.3rem;
+}
+
+.profile-pic {
+  display: block;
+  margin: 1rem auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #009688;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #00695c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  background-color: #e0f2f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #00695c;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004d40;
+  color: white;
+  margin-top: 3rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   </style>
-</head>
-<body>
-
-<header>
-  <h1>Oumar Diawara</h1>
-  <p>Agent commercial & apprenant en informatique</p>
-</header>
-
-<nav>
-  <a href="#presentation">Présentation</a>
-  <a href="#competences">Compétences</a>
-  <a href="#projets">Projets</a>
-  <a href="#services">Services</a>
-  <a href="#objectif">Objectif</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="presentation">
-  <h2>Présentation</h2>
-  <div class="photo">
-    <img src="profil.jpg" alt="Photo de Oumar Diawara" />
-  </div>
-  <p>Je suis Oumar Diawara, passionné par la vente et motivé à apprendre l'informatique pour réussir dans le monde numérique.</p>
-</section>
-
-<section id="competences">
+</head><body>
+  <header>
+    <h1>Oumar Diawara</h1>
+    <nav>
+      <a href="#presentation">Présentation</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#services">Services</a>
+      <a href="#objectif">Objectif</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <div class="container">
+    <section id="presentation">
+      <img src="profil.jpg" alt="Photo de Oumar Diawara" class="profile-pic" />
+      <h2>Présentation</h2>
+      <p>Je suis Oumar Diawara, agent commercial passionné par la vente, le numérique et motivé à apprendre l'informatique.</p>
+    </section><section id="competences">
   <h2>Compétences</h2>
   <ul>
-    <li>Communication et négociation commerciale</li>
-    <li>Esprit d'équipe et relation client</li>
-    <li>Initiation en HTML, CSS et informatique générale</li>
-    <li>Utilisation de WhatsApp, réseaux sociaux, email</li>
+    <li>Techniques de vente et négociation</li>
+    <li>Communication et relation client</li>
+    <li>Initiation au développement web</li>
+    <li>Utilisation des outils bureautiques</li>
   </ul>
 </section>
 
 <section id="projets">
   <h2>Projets</h2>
+  <p>Voici quelques projets que j’ai réalisés ou auxquels je participe actuellement :</p>
   <ul>
-    <li>Création de ce site web personnel</li>
-    <li>Formation continue sur les bases de l’informatique</li>
-    <li>Participation à des simulations de vente</li>
+    <li>Création de ce portfolio personnel avec GitHub Pages</li>
+    <li>Suivi de formations en ligne sur le développement web</li>
+    <li>Participation à des projets de vente pour des entreprises locales</li>
   </ul>
 </section>
 
-<section id="services">
+<section id="services" class="services">
   <h2>Services</h2>
   <ul>
-    <li>Prospection et vente de produits ou services</li>
-    <li>Conseils clients et fidélisation</li>
-    <li>Création de mini-sites personnels</li>
-    <li>Assistance à la communication numérique</li>
+    <li>Prospection et fidélisation de clients</li>
+    <li>Promotion de produits et services</li>
+    <li>Conseils en stratégie commerciale</li>
+    <li>Assistance à la création de mini-sites professionnels</li>
   </ul>
 </section>
 
 <section id="objectif">
   <h2>Objectif Professionnel</h2>
-  <p>Mon objectif est de devenir un agent commercial performant tout en développant mes compétences en informatique pour mieux m’adapter au marché numérique.</p>
+  <p>Mon objectif est de devenir un agent commercial performant tout en développant mes compétences en informatique et marketing numérique.</p>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <form class="contact-form">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required />
-
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
+    <input type="text" placeholder="Votre nom" required />
+    <input type="email" placeholder="Votre email" required />
+    <textarea rows="4" placeholder="Votre message" required></textarea>
     <button type="submit">Envoyer</button>
   </form>
-  <p>📞 Téléphone : +223 94 79 44 34</p>
-  <p>📧 Email : chvroog94@gmail.com</p>
-  <p>📍 Ville : Bamako, Mali</p>
-  <p>🔗 <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=oumar-diawara-a2469036a" target="_blank">LinkedIn</a></p>
 </section>
 
-<footer>
-  &copy; 2025 Oumar Diawara. Tous droits réservés.
-</footer>
-
-</body>
-</html>
+  </div>  <footer>
+    © 2025 Oumar Diawara. Tous droits réservés.<br />
+    <a href="https://linkedin.com/in/oumar-diawara-a2469036a" style="color: #b2dfdb">LinkedIn</a>
+  </footer>
+</body></html>
